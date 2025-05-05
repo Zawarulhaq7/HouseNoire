@@ -2809,7 +2809,7 @@ img.u-pull-left {
  *
  * ------------------------------------------------------------------- */
 .s-header {
-    --logo-width : 9.6rem;
+    --logo-width : 40rem;
     z-index      : 100;
     width        : 100%;
     position     : absolute;
@@ -2826,6 +2826,12 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## logo
  * -------------------------------------------------------------------- */
+
+.logo img { /* Apply the custom property to the image inside the .logo class */
+    width: var(--logo-width); /* Set the image width using the custom property */
+    height: auto; /* Maintain aspect ratio of the image */
+}
+
 .s-header__logo {
     z-index   : 101;
     transform : translate(0, -50%);
@@ -2897,7 +2903,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 8rem;
+        --logo-width : 35rem;
         top          : var(--vspace-0_5);
     }
 
@@ -2917,7 +2923,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 600px) {
     .s-header {
-        --logo-width : 7.2rem;
+        --logo-width : 25rem;
     }
 
     .s-header__logo {
@@ -2937,7 +2943,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 400px) {
     .s-header {
-        --logo-width : 6rem;
+        --logo-width : 15rem;
     }
 
     .s-header__logo {
@@ -3184,6 +3190,8 @@ img.u-pull-left {
 .s-intro .counter {
     display   : flex;
     flex-flow : row wrap;
+    align-self: center;
+    justify-self:center;
 }
 
 .s-intro .counter__time {

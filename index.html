@@ -49,7 +49,7 @@
 
                 <div class="s-header__logo" >
                     <a class="logo" href="" >
-                        <img src="images/headercover.png" alt="Homepage" style="width:30%;">
+                        <img src="images/headercover.png" alt="Homepage">
                     </a>
 				</div>
     
@@ -126,12 +126,9 @@
                     </div>  <!-- end counter -->
 
                     <div class="s-intro__content-bottom">
-                        <h1 class="s-intro__content-title">Our site is launching soon.</h1>
+                        <h1 class="s-intro__content-title">Coming Soon</h1>
                         <p>
-						House of Noire is a premium formal clothing brand redefining<br>
-						bespoke tailoring through doorstep service, personalized<br>
-						fashion expertise, and impeccable craftsmanship in  <br>
-						Rawalpindi and Islamabad.
+						A premium formal clothing brand.<br>
                         </p>
                     </div>
 
@@ -328,16 +325,29 @@
 									<br><br>
 									Get in touch with us, and let us bring the elegance of custom-tailored formal wear directly to your doorstep.
                                     </p>
-
-
-                                    <form id="mc-form" class="mc-form" onsubmit="this.reset();">
-                                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Name" title="Name"  required>
-                                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Email Address" title="Email Address" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-										<input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Message" title="Message" style=" height: 120px;" required>
-                                        <input type="submit" name="Submit" value="Submit" class="btn--small btn--primary u-fullwidth">
-                                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
-                                        <div class="mc-status"></div>
-                                    </form>
+									
+									
+									
+						<form>
+                        <div>
+                            <label for="sampleInput">Your email</label>
+                            <input class="u-fullwidth" type="email" placeholder="johndoe@gmail.com" id="sampleInput" required>
+                        </div>
+                        <div>
+                            <label for="sampleRecipientInput">Reason for contacting</label>
+                            <div class="ss-custom-select">
+                                <select class="u-fullwidth" id="sampleRecipientInput">
+                                    <option value="Option 1">Questions</option>
+                                    <option value="Option 2">Report</option>
+                                    <option value="Option 3">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <label for="exampleMessage">Message</label>
+                        <textarea class="u-fullwidth" placeholder="Your message" id="exampleMessage" required></textarea>      
+                        <input class="btn--primary u-fullwidth" type="submit" value="Submit">
+                    </form>
  
                                 </div>
                             </div>
@@ -457,6 +467,7 @@
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
+	<script src="js/timer.js"></script>
     <script src="js/main.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particle-settings.js"></script>
